@@ -1,0 +1,139 @@
+
+cpu 
+{
+    manufacturer: 'Intel®',
+    brand: 'Core™ i9-9900',
+    vendor: 'GenuineIntel',
+    family: '6',
+    model: '158',
+    stepping: '13',
+    revision: '',
+    voltage: '',
+    speed: 3.1,
+    speedMin: 0.8,
+    speedMax: 5,
+    governor: 'powersave',
+    cores: 16,
+    physicalCores: 8,
+    processors: 1,
+    socket: 'LGA1151',
+    flags: 'fpu vme de pse ...',
+    virtualization: true,
+    cache: { l1d: 262144, l1i: 262144, l2: 2097152, l3: 16777216 }
+}
+
+ram
+{
+  total: 67092135936,
+  free: 65769291776,
+  used: 1322844160,
+  active: 1032495104,
+  available: 66059640832,
+  buffers: 63213568,
+  cached: 800124928,
+  slab: 268804096,
+  buffcache: 1132142592,
+  swaptotal: 8589930496,
+  swapused: 0,
+  swapfree: 8589930496
+}
+
+battery
+{
+  hasBattery: true,
+  cycleCount: 35,
+  isCharging: false,
+  designedCapacity: 64958,
+  maxCapacity: 65865,
+  currentCapacity: 64856,
+  voltage: 12.767,
+  capacityUnit: 'mWh',
+  percent: 100,
+  timeRemaining: 551,
+  acConnected: false,
+  type: 'Li-ion',
+  model: '',
+  manufacturer: 'Apple',
+  serial: 'F9Y19860Y9AH9XBAX'
+}
+
+graphics
+{
+  controllers: [
+    {
+      vendor: 'Intel',
+      model: 'Intel Iris Plus Graphics 655',
+      bus: 'Built-In',
+      vram: 1536,
+      vramDynamic: true
+    }
+  ],
+  displays: [
+    {
+      vendor: '',
+      model: 'Color LCD',
+      main: true,
+      builtin: false,
+      connection: 'Internal',
+      sizeX: null,
+      sizeY: null,
+      pixelDepth: 24,
+      resolutionX: 2560,
+      resolutionY: 1600,
+      currentResX: 2560,
+      currentResY: 1600,
+      positionX: 0,
+      positionY: 0,
+      currentRefreshRate: null
+    }
+  ]
+}
+
+
+disk
+[
+  {
+    fs: '/dev/md2',
+    type: 'ext4',
+    size: 972577361920,
+    used: 59142635520,
+    available: 913434726400,
+    use: 6.08,
+    mount: '/'
+  },
+  {
+    ...
+  }
+]
+
+[
+  {
+    device: '/dev/nvme0n1',
+    type: 'NVMe',
+    name: 'SAMSUNG xxxxxxxxxxxx-xxxx',
+    vendor: 'Samsung',
+    size: 1024209543168,
+    bytesPerSector: null,
+    totalCylinders: null,
+    totalHeads: null,
+    totalSectors: null,
+    totalTracks: null,
+    tracksPerCylinder: null,
+    sectorsPerTrack: null,
+    firmwareRevision: '',
+    serialNum: '...serial....',
+    interfaceType: 'PCIe',
+    smartStatus: 'unknown',
+    smartData: {
+      json_format_version: [Array],
+      smartctl: [Object],
+      device: [Object],
+      model_name: 'SAMSUNG xxxxxxxxxxxx-xxxx',
+      serial_number: '...serial....',             // full structure
+      ...                                         // see index.d.ts
+    }
+  },
+  {
+    ...
+  }
+]

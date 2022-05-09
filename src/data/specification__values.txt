@@ -1,0 +1,39 @@
+cpu:'manufacturer, brand, vendor, family, model, stepping, voltage, speed, speedMin, speedMax, governor, cores, physicalCores, processors, socket, flags, virtualization, cache'
+
+Query 
+	loop through all keys 
+		get value 
+	set 
+
+ram:'total, free, used, active, available, buffers, cached, slab, buffcache, swaptotal, swapused, swapfree'
+
+Query 
+	loop through all keys 
+		get value
+		set value 
+	specify fields to convert 
+		['total'] ** num 
+
+
+battery:'hasBattery, cycleCount, isCharging, designedCapacity, maxCapacity, currentCapacity, voltage, capacityUnit,
+	percent, timeRemaining, acConnected, type, model, manufacturer, serial'
+
+	loop through all keys 
+		get value 
+		set value 
+	specify fields to convert 
+		[designedCapacity] ** num 
+
+graphics:'controllers, displays'
+
+	loop through all keys 
+		loop through controllers
+			get value 	
+			set value 
+		loop through display 
+			get value 
+			set value 
+
+diskLayout:'*'
+
+fsSize:'*' 
